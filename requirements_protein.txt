@@ -1,0 +1,94 @@
+# Protein MD Agents - Requirements
+# ==================================
+# Multi-agent framework for protein molecular dynamics simulations
+# using OpenMM, WESTPA, and ChimeraX
+
+# ==================================
+# AutoGen Multi-Agent Framework
+# ==================================
+autogen-agentchat==0.4.0.dev6
+autogen-core==0.4.0.dev6
+autogen-ext[openai,web-surfer]
+
+# ==================================
+# Core AI/LLM Packages
+# ==================================
+openai>=1.0.0
+anthropic>=0.40.0
+
+# ==================================
+# Vector Database (for Teachability)
+# ==================================
+chromadb>=0.5.0
+
+# ==================================
+# Browser Automation
+# ==================================
+playwright
+nest-asyncio
+
+# ==================================
+# OpenMM Molecular Dynamics
+# ==================================
+# Note: OpenMM is best installed via conda: conda install -c conda-forge openmm
+# Uncomment below for pip installation (may have limited GPU support)
+# openmm>=8.0.0
+
+# ==================================
+# Trajectory Analysis
+# ==================================
+mdtraj>=1.9.9
+
+# ==================================
+# Structure Handling
+# ==================================
+biopython>=1.80
+
+# ==================================
+# HPC/Remote Execution
+# ==================================
+paramiko>=3.0.0  # SSH connections for SLURM
+
+# ==================================
+# Data Processing & Visualization
+# ==================================
+numpy>=1.24.0
+pandas>=2.0.0
+matplotlib>=3.7.0
+scipy>=1.10.0
+
+# ==================================
+# Utilities
+# ==================================
+python-dotenv
+PyYAML
+requests
+httpx
+pydantic>=2.0.0
+tqdm
+
+# ==================================
+# Optional: WESTPA Weighted Ensemble
+# ==================================
+# Note: WESTPA is best installed via conda: conda install -c conda-forge westpa
+# Or from source: pip install westpa
+
+# ==================================
+# Optional: ChimeraX Integration
+# ==================================
+# Note: ChimeraX must be installed separately from https://www.cgl.ucsf.edu/chimerax/
+# The chimerax Python package is bundled with the ChimeraX installation
+
+# ==================================
+# Development/Testing
+# ==================================
+pytest>=7.0.0
+pytest-asyncio>=0.21.0
+black>=23.0.0
+isort>=5.12.0
+
+# ==================================
+# Deprecated (removed from protein version)
+# ==================================
+# phonopy - materials science phonon calculations
+# ase - materials science atomic simulation environment
