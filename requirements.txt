@@ -29,3 +29,6 @@ PyYAML
 requests
 httpx
 pydantic
+
+# TUI Interface
+textual>=0.47.0
